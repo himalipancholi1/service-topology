@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "entities": [
+    {
+      "id": "billing-app",
+      "type": "application",
+      "level": "L1",
+      "relations": [],
+      "indexes": {}
+    },
+    {
+      "id": "aks-cluster-1",
+      "type": "aks_cluster",
+      "level": "L2",
+      "relations": [
+        {
+          "type": "DEPENDS_ON",
+          "target": "billing-app"
+        }
+      ],
+      "indexes": {
+        "raw": "raw-metrics-aks",
+        "health": "health-score-aks"
+      }
+    },
+    {
+      "id": "worker-node-01",
+      "type": "worker_node",
+      "level": "L3",
+      "relations": [
+        {
+          "type": "PART_OF",
+          "target": "aks-cluster-1"
+        }
+      ],
+      "indexes": {
+        "raw": "raw-metrics-worker",
+        "health": "health-score-worker"
+      }
+    }
+  ]
+}
