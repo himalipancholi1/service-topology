@@ -1,0 +1,152 @@
+[
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "himalayas-platform",
+    "display_name": "Himalayas Platform",
+    "entity_type": "platform",
+    "level": "L1",
+    "parent_entity_id": "",
+    "health_score": 88,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "application",
+    "display_name": "Application Services",
+    "entity_type": "application",
+    "level": "L2",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 82,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "infrastructure",
+    "display_name": "Infrastructure",
+    "entity_type": "infrastructure",
+    "level": "L2",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 61,
+    "status": "Degraded"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "extended-services",
+    "display_name": "Extended Services",
+    "entity_type": "new_entity",
+    "level": "L2",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 79,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "apprequests",
+    "display_name": "App Requests",
+    "entity_type": "application",
+    "level": "L3",
+    "parent_entity_id": "application",
+    "health_score": 91,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "appexceptions",
+    "display_name": "App Exceptions",
+    "entity_type": "application",
+    "level": "L3",
+    "parent_entity_id": "application",
+    "health_score": 42,
+    "status": "Critical"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "appdependencies",
+    "display_name": "App Dependencies",
+    "entity_type": "application",
+    "level": "L3",
+    "parent_entity_id": "application",
+    "health_score": 85,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "apptraces",
+    "display_name": "App Traces",
+    "entity_type": "application",
+    "level": "L3",
+    "parent_entity_id": "application",
+    "health_score": 88,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "system-monitor",
+    "display_name": "System Metrics",
+    "entity_type": "infrastructure",
+    "level": "L3",
+    "parent_entity_id": "infrastructure",
+    "health_score": 58,
+    "status": "Degraded"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "container-logs",
+    "display_name": "Container Logs",
+    "entity_type": "infrastructure",
+    "level": "L3",
+    "parent_entity_id": "infrastructure",
+    "health_score": 83,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "insights-metrics",
+    "display_name": "Insights Metrics",
+    "entity_type": "infrastructure",
+    "level": "L3",
+    "parent_entity_id": "infrastructure",
+    "health_score": 65,
+    "status": "Degraded"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "kubepod-inventory",
+    "display_name": "KubePod Inventory",
+    "entity_type": "infrastructure",
+    "level": "L3",
+    "parent_entity_id": "infrastructure",
+    "health_score": 77,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "sql-database",
+    "display_name": "SQL Database",
+    "entity_type": "new_entity",
+    "level": "L3",
+    "parent_entity_id": "extended-services",
+    "health_score": 81,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "servicebus-monitor",
+    "display_name": "Service Bus",
+    "entity_type": "new_entity",
+    "level": "L3",
+    "parent_entity_id": "extended-services",
+    "health_score": 90,
+    "status": "Healthy"
+  },
+  {
+    "timestamp": "2026-05-02T10:59:03Z",
+    "entity_id": "aksnetwork-monitor",
+    "display_name": "AKS Network",
+    "entity_type": "new_entity",
+    "level": "L3",
+    "parent_entity_id": "extended-services",
+    "health_score": 55,
+    "status": "Degraded"
+  }
+]
