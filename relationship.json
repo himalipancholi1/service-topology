@@ -1,42 +1,377 @@
-{
-  "version": "1.0",
-  "entities": [
-    {
-      "id": "billing-app",
-      "type": "application",
-      "level": "L1",
-      "relations": [],
-      "indexes": {}
+[
+  {
+    "entity_id": "business-application",
+    "display_name": "Business Application",
+    "entity_type": "business_application",
+    "level": "L0",
+    "parent_entity_id": null,
+    "description": "Top-level business application health view",
+    "health_formula": "Weighted score of all L1 entities",
+    "children": [
+      "aks-cluster",
+      "sql-environment",
+      "app-services"
+    ],
+    "data_sources": {
+      "metrics": false,
+      "logs": false,
+      "health_score": true
     },
-    {
-      "id": "aks-cluster-1",
-      "type": "aks_cluster",
-      "level": "L2",
-      "relations": [
-        {
-          "type": "DEPENDS_ON",
-          "target": "billing-app"
-        }
-      ],
-      "indexes": {
-        "raw": "raw-metrics-aks",
-        "health": "health-score-aks"
-      }
+    "raw_metrics_source": null,
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "business-overview",
+    "tags": [
+      "executive",
+      "platform",
+      "l0"
+    ]
+  },
+
+  {
+    "entity_id": "aks-cluster",
+    "display_name": "AKS Cluster",
+    "entity_type": "aks_cluster",
+    "level": "L1",
+    "parent_entity_id": "business-application",
+    "description": "AKS platform infrastructure monitoring",
+    "health_formula": "Control Plane + Networking + Worker Nodes + App (Flask) + Pods",
+    "children": [
+      "aks-networking",
+      "worker-nodes",
+      "app-flask"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": true,
+      "health_score": true
     },
-    {
-      "id": "worker-node-01",
-      "type": "worker_node",
-      "level": "L3",
-      "relations": [
-        {
-          "type": "PART_OF",
-          "target": "aks-cluster-1"
-        }
-      ],
-      "indexes": {
-        "raw": "raw-metrics-worker",
-        "health": "health-score-worker"
-      }
-    }
-  ]
-}
+    "raw_metrics_source": "raw_metrics_aks.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "aks-overview",
+    "tags": [
+      "aks",
+      "kubernetes",
+      "infrastructure",
+      "l1"
+    ]
+  },
+
+  {
+    "entity_id": "sql-environment",
+    "display_name": "SQL Environment",
+    "entity_type": "sql_environment",
+    "level": "L1",
+    "parent_entity_id": "business-application",
+    "description": "SQL platform and VM monitoring",
+    "health_formula": "Azure VM + SQL Database",
+    "children": [
+      "sql-database",
+      "azure-vm"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": false,
+      "health_score": true
+    },
+    "raw_metrics_source": "raw_metrics_sql.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "sql-overview",
+    "tags": [
+      "sql",
+      "database",
+      "l1"
+    ]
+  },
+
+  {
+    "entity_id": "app-services",
+    "display_name": "App Services",
+    "entity_type": "app_services",
+    "level": "L1",
+    "parent_entity_id": "business-application",
+    "description": "Azure App Services monitoring",
+    "health_formula": "Metrics + Logs",
+    "children": [
+      "app-services-source-details"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": true,
+      "health_score": true
+    },
+    "raw_metrics_source": "raw_metrics_appservices.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "appservices-overview",
+    "tags": [
+      "azure",
+      "app-services",
+      "l1"
+    ]
+  },
+
+  {
+    "entity_id": "aks-networking",
+    "display_name": "AKS Networking",
+    "entity_type": "aks_networking",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "description": "AKS network monitoring and ingress",
+    "health_formula": "Metrics only",
+    "children": [],
+    "data_sources": {
+      "metrics": true,
+      "logs": false,
+      "health_score": true
+    },
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "tool": "Prometheus",
+      "resource_name": "aks-networking"
+    },
+    "raw_metrics_source": "raw_metrics_aks_networking.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "aks-networking-details",
+    "tags": [
+      "network",
+      "aks",
+      "l2"
+    ]
+  },
+
+  {
+    "entity_id": "worker-nodes",
+    "display_name": "Worker Nodes",
+    "entity_type": "worker_nodes",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "description": "AKS worker node monitoring",
+    "health_formula": "Metrics + Logs",
+    "children": [
+      "worker-node-source-details"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": true,
+      "health_score": true
+    },
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "sq-aks-test"
+    },
+    "raw_metrics_source": "raw_metrics_worker_nodes.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "worker-node-details",
+    "tags": [
+      "node",
+      "aks",
+      "kubernetes",
+      "l2"
+    ]
+  },
+
+  {
+    "entity_id": "app-flask",
+    "display_name": "App (Flask)",
+    "entity_type": "application_component",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "description": "Flask application running on AKS",
+    "health_formula": "Metrics + Logs",
+    "children": [
+      "app-source-details"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": true,
+      "health_score": true
+    },
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "flask2sqltest"
+    },
+    "raw_metrics_source": "raw_metrics_app_flask.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "flask-app-details",
+    "tags": [
+      "application",
+      "flask",
+      "aks",
+      "l2"
+    ]
+  },
+
+  {
+    "entity_id": "sql-database",
+    "display_name": "SQL Database",
+    "entity_type": "sql_database",
+    "level": "L2",
+    "parent_entity_id": "sql-environment",
+    "description": "SQL database monitoring",
+    "health_formula": "Metrics only",
+    "children": [
+      "sql-db-source-details"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": false,
+      "health_score": true
+    },
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "sql-monitoring-vm",
+      "database_name_variable": "db_name"
+    },
+    "raw_metrics_source": "raw_metrics_sql_db.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "sql-db-details",
+    "tags": [
+      "sql",
+      "database",
+      "l2"
+    ]
+  },
+
+  {
+    "entity_id": "azure-vm",
+    "display_name": "Azure VM",
+    "entity_type": "azure_vm",
+    "level": "L2",
+    "parent_entity_id": "sql-environment",
+    "description": "Azure VM infrastructure monitoring",
+    "health_formula": "Metrics only",
+    "children": [
+      "azure-vm-source-details"
+    ],
+    "data_sources": {
+      "metrics": true,
+      "logs": false,
+      "health_score": true
+    },
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "SQL-VM"
+    },
+    "raw_metrics_source": "raw_metrics_vm.json",
+    "health_score_source": "health_scores.json",
+    "anomaly_source": "anomaly_events.json",
+    "dashboard_uid": "azure-vm-details",
+    "tags": [
+      "vm",
+      "azure",
+      "infrastructure",
+      "l2"
+    ]
+  },
+
+  {
+    "entity_id": "worker-node-source-details",
+    "display_name": "Worker Node Source Details",
+    "entity_type": "source_metadata",
+    "level": "L3",
+    "parent_entity_id": "worker-nodes",
+    "description": "Detailed metadata for worker node monitoring",
+    "components": [
+      "node"
+    ],
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "sq-aks-test"
+    },
+    "dashboard_uid": "worker-node-source",
+    "tags": [
+      "metadata",
+      "l3"
+    ]
+  },
+
+  {
+    "entity_id": "app-source-details",
+    "display_name": "App Source Details",
+    "entity_type": "source_metadata",
+    "level": "L3",
+    "parent_entity_id": "app-flask",
+    "description": "Detailed metadata for Flask app monitoring",
+    "components": [
+      "application"
+    ],
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "flask2sqltest"
+    },
+    "dashboard_uid": "app-source-details",
+    "tags": [
+      "metadata",
+      "l3"
+    ]
+  },
+
+  {
+    "entity_id": "sql-db-source-details",
+    "display_name": "SQL DB Source Details",
+    "entity_type": "source_metadata",
+    "level": "L3",
+    "parent_entity_id": "sql-database",
+    "description": "Detailed metadata for SQL DB monitoring",
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "sql-monitoring-vm",
+      "database_name_variable": "db_name"
+    },
+    "dashboard_uid": "sql-db-source-details",
+    "tags": [
+      "metadata",
+      "sql",
+      "l3"
+    ]
+  },
+
+  {
+    "entity_id": "azure-vm-source-details",
+    "display_name": "Azure VM Source Details",
+    "entity_type": "source_metadata",
+    "level": "L3",
+    "parent_entity_id": "azure-vm",
+    "description": "Detailed metadata for Azure VM monitoring",
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_name": "SQL-VM"
+    },
+    "dashboard_uid": "azure-vm-source-details",
+    "tags": [
+      "metadata",
+      "vm",
+      "l3"
+    ]
+  },
+
+  {
+    "entity_id": "app-services-source-details",
+    "display_name": "App Services Source Details",
+    "entity_type": "source_metadata",
+    "level": "L3",
+    "parent_entity_id": "app-services",
+    "description": "Detailed metadata for Azure App Services",
+    "metric_source": {
+      "platform": "Azure Monitor",
+      "resource_group": "boh1appsqltest002202210184512",
+      "coverage": "Both Web App and App Insights"
+    },
+    "log_source": {
+      "platform": "Log Analytics"
+    },
+    "dashboard_uid": "appservices-source-details",
+    "tags": [
+      "metadata",
+      "app-services",
+      "l3"
+    ]
+  }
+]
