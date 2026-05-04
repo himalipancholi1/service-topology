@@ -1,0 +1,76 @@
+[
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "appexceptions",
+    "metric_name": "error_rate",
+    "metric_value": 12.5,
+    "unit": "%",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "appexceptions",
+    "metric_name": "error_rate",
+    "metric_value": 18.7,
+    "unit": "%",
+    "severity": "critical"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "appexceptions",
+    "metric_name": "error_rate",
+    "metric_value": 7.3,
+    "unit": "%",
+    "severity": "healthy"
+  },
+
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "application",
+    "metric_name": "cpu_usage",
+    "metric_value": 65.2,
+    "unit": "%",
+    "severity": "healthy"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "application",
+    "metric_name": "cpu_usage",
+    "metric_value": 78.9,
+    "unit": "%",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "application",
+    "metric_name": "cpu_usage",
+    "metric_value": 88.4,
+    "unit": "%",
+    "severity": "critical"
+  },
+
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "sql-database",
+    "metric_name": "latency_p95",
+    "metric_value": 210,
+    "unit": "ms",
+    "severity": "healthy"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "sql-database",
+    "metric_name": "latency_p95",
+    "metric_value": 340,
+    "unit": "ms",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "sql-database",
+    "metric_name": "latency_p95",
+    "metric_value": 480,
+    "unit": "ms",
+    "severity": "critical"
+  }
+]
