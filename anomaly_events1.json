@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "appexceptions",
+    "metric_name": "error_rate",
+    "metric_value": 18.7,
+    "baseline_value": 8.5,
+    "deviation_percent": 120,
+    "anomaly_flag": true,
+    "anomaly_score": 0.87,
+    "anomaly_type": "spike",
+    "impact": "critical"
+  },
+  {
+    "timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "application",
+    "metric_name": "cpu_usage",
+    "metric_value": 88.4,
+    "baseline_value": 60.0,
+    "deviation_percent": 47,
+    "anomaly_flag": true,
+    "anomaly_score": 0.72,
+    "anomaly_type": "spike",
+    "impact": "warning"
+  },
+  {
+    "timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "sql-database",
+    "metric_name": "latency_p95",
+    "metric_value": 480,
+    "baseline_value": 220,
+    "deviation_percent": 118,
+    "anomaly_flag": true,
+    "anomaly_score": 0.91,
+    "anomaly_type": "spike",
+    "impact": "critical"
+  }
+]
