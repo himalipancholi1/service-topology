@@ -1,0 +1,27 @@
+[
+  {
+    "source": "himalayas-platform",
+    "target": "application",
+    "dependency_type": "service_group"
+  },
+  {
+    "source": "application",
+    "target": "appexceptions",
+    "dependency_type": "component"
+  },
+  {
+    "source": "application",
+    "target": "sql-database",
+    "dependency_type": "database"
+  },
+  {
+    "source": "application",
+    "target": "servicebus-monitor",
+    "dependency_type": "messaging"
+  },
+  {
+    "source": "application",
+    "target": "aksnetwork-monitor",
+    "dependency_type": "infrastructure"
+  }
+]
