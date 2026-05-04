@@ -1,0 +1,38 @@
+[
+  {
+    "entity_id": "himalayas-platform",
+    "owner": "platform-team",
+    "environment": "production",
+    "region": "ap-south-1",
+    "tier": "critical",
+    "sla": "99.9%",
+    "created_at": "2024-01-10"
+  },
+  {
+    "entity_id": "application",
+    "owner": "app-team",
+    "environment": "production",
+    "region": "ap-south-1",
+    "tier": "critical",
+    "sla": "99.9%",
+    "created_at": "2024-02-15"
+  },
+  {
+    "entity_id": "appexceptions",
+    "owner": "app-team",
+    "environment": "production",
+    "region": "ap-south-1",
+    "tier": "high",
+    "sla": "99.5%",
+    "created_at": "2024-03-01"
+  },
+  {
+    "entity_id": "sql-database",
+    "owner": "db-team",
+    "environment": "production",
+    "region": "ap-south-1",
+    "tier": "critical",
+    "sla": "99.99%",
+    "created_at": "2023-11-20"
+  }
+]
