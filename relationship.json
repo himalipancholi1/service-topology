@@ -1,8 +1,8 @@
 [
   {
-    "entity_id": "business-application",
-    "display_name": "Business Application",
-    "entity_type": "business_application",
+    "entity_id": "himalayas-platform",
+    "display_name": "Himalayas Platform",
+    "entity_type": "himalayas-platform",
     "level": "L0",
     "parent_entity_id": null
   },
@@ -12,7 +12,7 @@
     "display_name": "AKS Cluster",
     "entity_type": "aks_cluster",
     "level": "L1",
-    "parent_entity_id": "business-application"
+    "parent_entity_id": "himalayas-platform"
   },
 
   {
@@ -20,7 +20,7 @@
     "display_name": "SQL Environment",
     "entity_type": "sql_environment",
     "level": "L1",
-    "parent_entity_id": "business-application"
+    "parent_entity_id": "himalayas-platform"
   },
 
   {
@@ -28,7 +28,7 @@
     "display_name": "App Services",
     "entity_type": "app_services",
     "level": "L1",
-    "parent_entity_id": "business-application"
+    "parent_entity_id": "himalayas-platform"
   },
 
   {
