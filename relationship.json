@@ -2,9 +2,25 @@
   {
     "entity_id": "himalayas-platform",
     "display_name": "Himalayas Platform",
-    "entity_type": "himalayas-platform",
+    "entity_type": "platform",
     "level": "L0",
-    "parent_entity_id": null
+    "parent_entity_id": null,
+
+    "raw_metrics_source": "raw_metrics_platform.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "executive-overview",
+    "dashboard_name": "Executive Overview - Platform Observability",
+
+    "drilldown_dashboard_uid": "service-drilldown",
+    "drilldown_level": "L1",
+
+    "tags": [
+      "executive",
+      "platform",
+      "observability"
+    ]
   },
 
   {
@@ -12,7 +28,26 @@
     "display_name": "AKS Cluster",
     "entity_type": "aks_cluster",
     "level": "L1",
-    "parent_entity_id": "himalayas-platform"
+    "parent_entity_id": "himalayas-platform",
+
+    "raw_metrics_source": "raw_metrics_aks.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "aks-overview",
+    "dashboard_name": "AKS Service Overview",
+
+    "drilldown_dashboard_uid": "component-drilldown",
+    "drilldown_level": "L2",
+
+    "metric_provider": "Azure Monitor",
+    "log_provider": "Log Analytics",
+
+    "tags": [
+      "aks",
+      "kubernetes",
+      "container"
+    ]
   },
 
   {
@@ -20,7 +55,24 @@
     "display_name": "SQL Environment",
     "entity_type": "sql_environment",
     "level": "L1",
-    "parent_entity_id": "himalayas-platform"
+    "parent_entity_id": "himalayas-platform",
+
+    "raw_metrics_source": "raw_metrics_sql.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "sql-overview",
+    "dashboard_name": "SQL Environment Overview",
+
+    "drilldown_dashboard_uid": "component-drilldown",
+    "drilldown_level": "L2",
+
+    "metric_provider": "Azure Monitor",
+
+    "tags": [
+      "sql",
+      "database"
+    ]
   },
 
   {
@@ -28,7 +80,24 @@
     "display_name": "App Services",
     "entity_type": "app_services",
     "level": "L1",
-    "parent_entity_id": "himalayas-platform"
+    "parent_entity_id": "himalayas-platform",
+
+    "raw_metrics_source": "raw_metrics_appservices.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "appservices-overview",
+    "dashboard_name": "App Services Overview",
+
+    "drilldown_dashboard_uid": "component-drilldown",
+    "drilldown_level": "L2",
+
+    "metric_provider": "Azure App Insights",
+
+    "tags": [
+      "azure",
+      "appservices"
+    ]
   },
 
   {
@@ -36,7 +105,24 @@
     "display_name": "AKS Networking",
     "entity_type": "aks_networking",
     "level": "L2",
-    "parent_entity_id": "aks-cluster"
+    "parent_entity_id": "aks-cluster",
+
+    "raw_metrics_source": "raw_metrics_aks_networking.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "aks-networking-details",
+    "dashboard_name": "AKS Networking Details",
+
+    "drilldown_dashboard_uid": "metadata-drilldown",
+    "drilldown_level": "L3",
+
+    "metric_provider": "Prometheus",
+
+    "tags": [
+      "network",
+      "aks"
+    ]
   },
 
   {
@@ -44,7 +130,24 @@
     "display_name": "Worker Nodes",
     "entity_type": "worker_nodes",
     "level": "L2",
-    "parent_entity_id": "aks-cluster"
+    "parent_entity_id": "aks-cluster",
+
+    "raw_metrics_source": "raw_metrics_worker_nodes.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "worker-node-details",
+    "dashboard_name": "Worker Node Details",
+
+    "drilldown_dashboard_uid": "metadata-drilldown",
+    "drilldown_level": "L3",
+
+    "metric_provider": "Azure Monitor",
+
+    "tags": [
+      "node",
+      "compute"
+    ]
   },
 
   {
@@ -52,7 +155,25 @@
     "display_name": "App Flask",
     "entity_type": "application_component",
     "level": "L2",
-    "parent_entity_id": "aks-cluster"
+    "parent_entity_id": "aks-cluster",
+
+    "raw_metrics_source": "raw_metrics_app_flask.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "flask-app-details",
+    "dashboard_name": "Flask Application Details",
+
+    "drilldown_dashboard_uid": "metadata-drilldown",
+    "drilldown_level": "L3",
+
+    "metric_provider": "Application Insights",
+
+    "tags": [
+      "application",
+      "python",
+      "flask"
+    ]
   },
 
   {
@@ -60,7 +181,24 @@
     "display_name": "SQL Database",
     "entity_type": "sql_database",
     "level": "L2",
-    "parent_entity_id": "sql-environment"
+    "parent_entity_id": "sql-environment",
+
+    "raw_metrics_source": "raw_metrics_sql_db.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "sql-db-details",
+    "dashboard_name": "SQL Database Details",
+
+    "drilldown_dashboard_uid": "metadata-drilldown",
+    "drilldown_level": "L3",
+
+    "metric_provider": "Azure SQL Monitor",
+
+    "tags": [
+      "sql",
+      "database"
+    ]
   },
 
   {
@@ -68,7 +206,24 @@
     "display_name": "Azure VM",
     "entity_type": "azure_vm",
     "level": "L2",
-    "parent_entity_id": "sql-environment"
+    "parent_entity_id": "sql-environment",
+
+    "raw_metrics_source": "raw_metrics_vm.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "azure-vm-details",
+    "dashboard_name": "Azure VM Details",
+
+    "drilldown_dashboard_uid": "metadata-drilldown",
+    "drilldown_level": "L3",
+
+    "metric_provider": "Azure VM Insights",
+
+    "tags": [
+      "vm",
+      "infrastructure"
+    ]
   },
 
   {
@@ -76,7 +231,18 @@
     "display_name": "Worker Node Source Details",
     "entity_type": "source_metadata",
     "level": "L3",
-    "parent_entity_id": "worker-nodes"
+    "parent_entity_id": "worker-nodes",
+
+    "raw_metrics_source": "raw_metrics_worker_nodes.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "worker-node-source",
+
+    "tags": [
+      "metadata",
+      "source"
+    ]
   },
 
   {
@@ -84,7 +250,18 @@
     "display_name": "App Source Details",
     "entity_type": "source_metadata",
     "level": "L3",
-    "parent_entity_id": "app-flask"
+    "parent_entity_id": "app-flask",
+
+    "raw_metrics_source": "raw_metrics_app_flask.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "app-source-details",
+
+    "tags": [
+      "metadata",
+      "application"
+    ]
   },
 
   {
@@ -92,7 +269,18 @@
     "display_name": "SQL DB Source Details",
     "entity_type": "source_metadata",
     "level": "L3",
-    "parent_entity_id": "sql-database"
+    "parent_entity_id": "sql-database",
+
+    "raw_metrics_source": "raw_metrics_sql_db.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "sql-db-source-details",
+
+    "tags": [
+      "metadata",
+      "sql"
+    ]
   },
 
   {
@@ -100,7 +288,18 @@
     "display_name": "Azure VM Source Details",
     "entity_type": "source_metadata",
     "level": "L3",
-    "parent_entity_id": "azure-vm"
+    "parent_entity_id": "azure-vm",
+
+    "raw_metrics_source": "raw_metrics_vm.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "azure-vm-source-details",
+
+    "tags": [
+      "metadata",
+      "vm"
+    ]
   },
 
   {
@@ -108,6 +307,17 @@
     "display_name": "App Services Source Details",
     "entity_type": "source_metadata",
     "level": "L3",
-    "parent_entity_id": "app-services"
+    "parent_entity_id": "app-services",
+
+    "raw_metrics_source": "raw_metrics_appservices.json",
+    "health_score_source": "health_scores1.json",
+    "anomaly_source": "anomaly_events1.json",
+
+    "dashboard_uid": "appservices-source-details",
+
+    "tags": [
+      "metadata",
+      "appservices"
+    ]
   }
 ]
