@@ -55,21 +55,30 @@
     "display_name": "AKS Cluster",
     "health_score": 88,
     "status": "GOOD",
-    "availability": 99.1
+    "availability": 99.1,
+    "sla_target": 99.9,
+    "error_budget_remaining": 68,
+    "timestamp": "2026-05-04T10:00:00Z"
   },
   {
     "entity_id": "sql-environment",
     "display_name": "SQL Environment",
     "health_score": 72,
     "status": "WARNING",
-    "availability": 97.4
+    "availability": 97.4,
+    "sla_target": 98.9,
+    "error_budget_remaining": 65,
+    "timestamp": "2026-05-04T10:00:00Z"
   },
   {
     "entity_id": "app-services",
     "display_name": "App Services",
     "health_score": 64,
     "status": "CRITICAL",
-    "availability": 95.2
+    "availability": 95.2,
+    "sla_target": 98.9,
+    "error_budget_remaining": 65,
+    "timestamp": "2026-05-04T10:00:00Z"
   },
   {
     "entity_id": "aks-networking",
