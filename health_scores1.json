@@ -70,5 +70,41 @@
     "health_score": 64,
     "status": "CRITICAL",
     "availability": 95.2
+  },
+  {
+    "entity_id": "aks-networking",
+    "display_name": "AKS Networking",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 91,
+    "status": "GOOD",
+    "sla_target": 99.9,
+    "availability": 99.4,
+    "error_budget_remaining": 88,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+  {
+    "entity_id": "worker-nodes",
+    "display_name": "Worker Nodes",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 84,
+    "status": "GOOD",
+    "sla_target": 99.9,
+    "availability": 98.7,
+    "error_budget_remaining": 76,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+  {
+    "entity_id": "app-flask",
+    "display_name": "App Flask",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 63,
+    "status": "WARNING",
+    "sla_target": 99.9,
+    "availability": 95.8,
+    "error_budget_remaining": 41,
+    "timestamp": "2026-05-04T10:00:00Z"
   }
 ]
