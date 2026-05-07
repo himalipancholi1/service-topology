@@ -1,5 +1,56 @@
 [
   {
+    "entity_id": "himalayas-platform",
+    "display_name": "Himalayas Platform",
+    "level": "L0",
+    "parent_entity_id": null,
+    "health_score": 88,
+    "status": "GOOD",
+    "sla_target": 99.9,
+    "availability": 99.1,
+    "error_budget_remaining": 81,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "application",
+    "display_name": "Application",
+    "level": "L1",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 76,
+    "status": "MODERATE",
+    "sla_target": 99.9,
+    "availability": 97.8,
+    "error_budget_remaining": 65,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "appexceptions",
+    "display_name": "App Exceptions",
+    "level": "L2",
+    "parent_entity_id": "application",
+    "health_score": 62,
+    "status": "DEGRADED",
+    "sla_target": 99.9,
+    "availability": 96.2,
+    "error_budget_remaining": 42,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "sql-database",
+    "display_name": "SQL Database",
+    "level": "L2",
+    "parent_entity_id": "application",
+    "health_score": 70,
+    "status": "WARNING",
+    "sla_target": 99.9,
+    "availability": 97.1,
+    "error_budget_remaining": 58,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+  {
     "entity_id": "aks-cluster",
     "display_name": "AKS Cluster",
     "health_score": 88,
