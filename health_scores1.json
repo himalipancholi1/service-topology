@@ -50,7 +50,6 @@
     "error_budget_remaining": 58,
     "timestamp": "2026-05-04T10:00:00Z"
   },
-  [
   {
     "entity_id": "aks-cluster",
     "display_name": "AKS Cluster",
