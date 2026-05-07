@@ -13,28 +13,80 @@
   },
 
   {
-    "entity_id": "application",
-    "display_name": "Application",
+    "entity_id": "aks-cluster",
+    "display_name": "AKS Cluster",
     "level": "L1",
     "parent_entity_id": "himalayas-platform",
-    "health_score": 76,
-    "status": "MODERATE",
+    "health_score": 88,
+    "status": "GOOD",
     "sla_target": 99.9,
-    "availability": 97.8,
-    "error_budget_remaining": 65,
+    "availability": 99.1,
+    "error_budget_remaining": 81,
     "timestamp": "2026-05-04T10:00:00Z"
   },
 
   {
-    "entity_id": "appexceptions",
-    "display_name": "App Exceptions",
-    "level": "L2",
-    "parent_entity_id": "application",
-    "health_score": 62,
-    "status": "DEGRADED",
+    "entity_id": "sql-environment",
+    "display_name": "SQL Environment",
+    "level": "L1",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 72,
+    "status": "WARNING",
     "sla_target": 99.9,
-    "availability": 96.2,
-    "error_budget_remaining": 42,
+    "availability": 97.4,
+    "error_budget_remaining": 58,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "app-services",
+    "display_name": "App Services",
+    "level": "L1",
+    "parent_entity_id": "himalayas-platform",
+    "health_score": 64,
+    "status": "CRITICAL",
+    "sla_target": 99.9,
+    "availability": 95.2,
+    "error_budget_remaining": 35,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "aks-networking",
+    "display_name": "AKS Networking",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 91,
+    "status": "GOOD",
+    "sla_target": 99.9,
+    "availability": 99.3,
+    "error_budget_remaining": 84,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "worker-nodes",
+    "display_name": "Worker Nodes",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 79,
+    "status": "MODERATE",
+    "sla_target": 99.9,
+    "availability": 98.1,
+    "error_budget_remaining": 69,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "app-flask",
+    "display_name": "App Flask",
+    "level": "L2",
+    "parent_entity_id": "aks-cluster",
+    "health_score": 68,
+    "status": "WARNING",
+    "sla_target": 99.9,
+    "availability": 96.8,
+    "error_budget_remaining": 49,
     "timestamp": "2026-05-04T10:00:00Z"
   },
 
@@ -42,12 +94,90 @@
     "entity_id": "sql-database",
     "display_name": "SQL Database",
     "level": "L2",
-    "parent_entity_id": "application",
+    "parent_entity_id": "sql-environment",
     "health_score": 70,
     "status": "WARNING",
     "sla_target": 99.9,
     "availability": 97.1,
     "error_budget_remaining": 58,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "azure-vm",
+    "display_name": "Azure VM",
+    "level": "L2",
+    "parent_entity_id": "sql-environment",
+    "health_score": 74,
+    "status": "MODERATE",
+    "sla_target": 99.9,
+    "availability": 97.9,
+    "error_budget_remaining": 61,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "worker-node-source-details",
+    "display_name": "Worker Node Source Details",
+    "level": "L3",
+    "parent_entity_id": "worker-nodes",
+    "health_score": 82,
+    "status": "GOOD",
+    "sla_target": 99.9,
+    "availability": 98.8,
+    "error_budget_remaining": 76,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "app-source-details",
+    "display_name": "App Source Details",
+    "level": "L3",
+    "parent_entity_id": "app-flask",
+    "health_score": 66,
+    "status": "WARNING",
+    "sla_target": 99.9,
+    "availability": 96.5,
+    "error_budget_remaining": 47,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "sql-db-source-details",
+    "display_name": "SQL DB Source Details",
+    "level": "L3",
+    "parent_entity_id": "sql-database",
+    "health_score": 71,
+    "status": "MODERATE",
+    "sla_target": 99.9,
+    "availability": 97.2,
+    "error_budget_remaining": 57,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "azure-vm-source-details",
+    "display_name": "Azure VM Source Details",
+    "level": "L3",
+    "parent_entity_id": "azure-vm",
+    "health_score": 73,
+    "status": "MODERATE",
+    "sla_target": 99.9,
+    "availability": 97.7,
+    "error_budget_remaining": 60,
+    "timestamp": "2026-05-04T10:00:00Z"
+  },
+
+  {
+    "entity_id": "app-services-source-details",
+    "display_name": "App Services Source Details",
+    "level": "L3",
+    "parent_entity_id": "app-services",
+    "health_score": 63,
+    "status": "CRITICAL",
+    "sla_target": 99.9,
+    "availability": 95.1,
+    "error_budget_remaining": 33,
     "timestamp": "2026-05-04T10:00:00Z"
   }
 ]
