@@ -1,0 +1,22 @@
+[
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "metric_name": "cpu_usage",
+    "metric_value": 68
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "metric_name": "memory_usage",
+    "metric_value": 72
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "metric_name": "latency_p95",
+    "metric_value": 240
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  }
+]
