@@ -72,5 +72,80 @@
     "metric_value": 480,
     "unit": "ms",
     "severity": "critical"
+  },
+
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "cpu_usage",
+    "metric_value": 52.4,
+    "unit": "%",
+    "severity": "healthy"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "cpu_usage",
+    "metric_value": 68.9,
+    "unit": "%",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "cpu_usage",
+    "metric_value": 84.1,
+    "unit": "%",
+    "severity": "critical"
+  },
+
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "memory_usage",
+    "metric_value": 61.2,
+    "unit": "%",
+    "severity": "healthy"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "memory_usage",
+    "metric_value": 73.8,
+    "unit": "%",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "memory_usage",
+    "metric_value": 89.6,
+    "unit": "%",
+    "severity": "critical"
+  },
+
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1,
+    "unit": "count",
+    "severity": "healthy"
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "pod_restart_count",
+    "metric_value": 4,
+    "unit": "count",
+    "severity": "warning"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "aks-cluster",
+    "metric_name": "pod_restart_count",
+    "metric_value": 9,
+    "unit": "count",
+    "severity": "critical"
   }
 ]
