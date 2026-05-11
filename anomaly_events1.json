@@ -45,5 +45,197 @@
     "anomaly_score": 0.91,
     "anomaly_type": "spike",
     "impact": "critical"
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-1",
+    "severity": "LOW",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-2",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in sql-database",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-3",
+    "severity": "HIGH",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-4",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Availability"
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-5",
+    "severity": "LOW",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-6",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in sql-database",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-7",
+    "severity": "HIGH",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "sql-database",
+    "anomaly_id": "sql-database-anomaly-8",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in sql-database",
+    "impact": "Availability"
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-1",
+    "severity": "LOW",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-2",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-3",
+    "severity": "HIGH",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-4",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Availability"
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-5",
+    "severity": "LOW",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-6",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-7",
+    "severity": "HIGH",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "anomaly_id": "worker-nodes-anomaly-8",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in worker-nodes",
+    "impact": "Availability"
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-1",
+    "severity": "LOW",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-2",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in app-flask",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-3",
+    "severity": "HIGH",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-4",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Availability"
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-5",
+    "severity": "LOW",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Latency"
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-6",
+    "severity": "MEDIUM",
+    "description": "Detected anomaly in app-flask",
+    "impact": "CPU"
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-7",
+    "severity": "HIGH",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Memory"
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "app-flask",
+    "anomaly_id": "app-flask-anomaly-8",
+    "severity": "CRITICAL",
+    "description": "Detected anomaly in app-flask",
+    "impact": "Availability"
   }
 ]
