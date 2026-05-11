@@ -271,7 +271,7 @@
     "level": "L3",
     "parent_entity_id": "sql-database",
 
-    "raw_metrics_source": "raw_metrics_sql_db.json",
+    "raw_metrics_source": "raw_metrics_sql.json",
     "health_score_source": "health_scores1.json",
     "anomaly_source": "anomaly_events1.json",
 
