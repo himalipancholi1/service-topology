@@ -115,5 +115,17 @@
     "availability": 95.8,
     "error_budget_remaining": 41,
     "timestamp": "2026-05-04T10:00:00Z"
+  },
+  {
+    "entity_id": "sql-database",
+    "health_score": 82
+  },
+  {
+    "entity_id": "worker-nodes",
+    "health_score": 74
+  },
+  {
+    "entity_id": "app-flask",
+    "health_score": 91
   }
 ]
