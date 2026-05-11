@@ -1,0 +1,902 @@
+[
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 50
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 60
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 180
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:00:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 51
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 61
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 183
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:01:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 52
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 62
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 186
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:02:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:03:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 53
+  },
+  {
+    "@timestamp": "2026-05-04T10:03:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 63
+  },
+  {
+    "@timestamp": "2026-05-04T10:03:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 189
+  },
+  {
+    "@timestamp": "2026-05-04T10:03:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:03:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 54
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 64
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 192
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:04:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:05:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 55
+  },
+  {
+    "@timestamp": "2026-05-04T10:05:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 65
+  },
+  {
+    "@timestamp": "2026-05-04T10:05:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 195
+  },
+  {
+    "@timestamp": "2026-05-04T10:05:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:05:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 56
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 66
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 198
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:06:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:07:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 57
+  },
+  {
+    "@timestamp": "2026-05-04T10:07:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 67
+  },
+  {
+    "@timestamp": "2026-05-04T10:07:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 201
+  },
+  {
+    "@timestamp": "2026-05-04T10:07:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:07:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 58
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 68
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 204
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:08:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:09:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 59
+  },
+  {
+    "@timestamp": "2026-05-04T10:09:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 69
+  },
+  {
+    "@timestamp": "2026-05-04T10:09:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 207
+  },
+  {
+    "@timestamp": "2026-05-04T10:09:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:09:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 60
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 70
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 210
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:10:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:11:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 61
+  },
+  {
+    "@timestamp": "2026-05-04T10:11:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 71
+  },
+  {
+    "@timestamp": "2026-05-04T10:11:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 213
+  },
+  {
+    "@timestamp": "2026-05-04T10:11:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:11:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 62
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 72
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 216
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:12:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:13:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 63
+  },
+  {
+    "@timestamp": "2026-05-04T10:13:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 73
+  },
+  {
+    "@timestamp": "2026-05-04T10:13:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 219
+  },
+  {
+    "@timestamp": "2026-05-04T10:13:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:13:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 64
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 74
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 222
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:14:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:15:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 65
+  },
+  {
+    "@timestamp": "2026-05-04T10:15:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 60
+  },
+  {
+    "@timestamp": "2026-05-04T10:15:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 225
+  },
+  {
+    "@timestamp": "2026-05-04T10:15:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:15:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:16:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 66
+  },
+  {
+    "@timestamp": "2026-05-04T10:16:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 61
+  },
+  {
+    "@timestamp": "2026-05-04T10:16:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 228
+  },
+  {
+    "@timestamp": "2026-05-04T10:16:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:16:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:17:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 67
+  },
+  {
+    "@timestamp": "2026-05-04T10:17:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 62
+  },
+  {
+    "@timestamp": "2026-05-04T10:17:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 231
+  },
+  {
+    "@timestamp": "2026-05-04T10:17:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:17:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:18:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 68
+  },
+  {
+    "@timestamp": "2026-05-04T10:18:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 63
+  },
+  {
+    "@timestamp": "2026-05-04T10:18:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 234
+  },
+  {
+    "@timestamp": "2026-05-04T10:18:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:18:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:19:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 69
+  },
+  {
+    "@timestamp": "2026-05-04T10:19:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 64
+  },
+  {
+    "@timestamp": "2026-05-04T10:19:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 237
+  },
+  {
+    "@timestamp": "2026-05-04T10:19:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:19:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:20:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 50
+  },
+  {
+    "@timestamp": "2026-05-04T10:20:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 65
+  },
+  {
+    "@timestamp": "2026-05-04T10:20:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 240
+  },
+  {
+    "@timestamp": "2026-05-04T10:20:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:20:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:21:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 51
+  },
+  {
+    "@timestamp": "2026-05-04T10:21:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 66
+  },
+  {
+    "@timestamp": "2026-05-04T10:21:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 243
+  },
+  {
+    "@timestamp": "2026-05-04T10:21:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:21:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:22:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 52
+  },
+  {
+    "@timestamp": "2026-05-04T10:22:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 67
+  },
+  {
+    "@timestamp": "2026-05-04T10:22:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 246
+  },
+  {
+    "@timestamp": "2026-05-04T10:22:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:22:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:23:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 53
+  },
+  {
+    "@timestamp": "2026-05-04T10:23:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 68
+  },
+  {
+    "@timestamp": "2026-05-04T10:23:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 249
+  },
+  {
+    "@timestamp": "2026-05-04T10:23:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:23:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:24:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 54
+  },
+  {
+    "@timestamp": "2026-05-04T10:24:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 69
+  },
+  {
+    "@timestamp": "2026-05-04T10:24:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 252
+  },
+  {
+    "@timestamp": "2026-05-04T10:24:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:24:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:25:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 55
+  },
+  {
+    "@timestamp": "2026-05-04T10:25:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 70
+  },
+  {
+    "@timestamp": "2026-05-04T10:25:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 255
+  },
+  {
+    "@timestamp": "2026-05-04T10:25:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:25:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:26:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 56
+  },
+  {
+    "@timestamp": "2026-05-04T10:26:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 71
+  },
+  {
+    "@timestamp": "2026-05-04T10:26:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 258
+  },
+  {
+    "@timestamp": "2026-05-04T10:26:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:26:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:27:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 57
+  },
+  {
+    "@timestamp": "2026-05-04T10:27:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 72
+  },
+  {
+    "@timestamp": "2026-05-04T10:27:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 261
+  },
+  {
+    "@timestamp": "2026-05-04T10:27:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 2
+  },
+  {
+    "@timestamp": "2026-05-04T10:27:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 0
+  },
+  {
+    "@timestamp": "2026-05-04T10:28:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 58
+  },
+  {
+    "@timestamp": "2026-05-04T10:28:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 73
+  },
+  {
+    "@timestamp": "2026-05-04T10:28:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 264
+  },
+  {
+    "@timestamp": "2026-05-04T10:28:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 3
+  },
+  {
+    "@timestamp": "2026-05-04T10:28:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 1
+  },
+  {
+    "@timestamp": "2026-05-04T10:29:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "cpu_usage",
+    "metric_value": 59
+  },
+  {
+    "@timestamp": "2026-05-04T10:29:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "memory_usage",
+    "metric_value": 74
+  },
+  {
+    "@timestamp": "2026-05-04T10:29:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "latency_p95",
+    "metric_value": 267
+  },
+  {
+    "@timestamp": "2026-05-04T10:29:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "error_rate",
+    "metric_value": 4
+  },
+  {
+    "@timestamp": "2026-05-04T10:29:00Z",
+    "entity_id": "worker-nodes",
+    "metric_name": "pod_restart_count",
+    "metric_value": 2
+  }
+]
