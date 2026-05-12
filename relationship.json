@@ -30,7 +30,7 @@
     "level": "L1",
     "parent_entity_id": "himalayas-platform",
 
-    "raw_metrics_source": "raw_metrics.json",
+    "raw_metrics_source": "raw_metrics_aks.json",
     "health_score_source": "health_scores1.json",
     "anomaly_source": "anomaly_events1.json",
 
@@ -107,7 +107,7 @@
     "level": "L2",
     "parent_entity_id": "aks-cluster",
 
-    "raw_metrics_source": "raw_metrics_aks_networking.json",
+    "raw_metrics_source": "raw_metrics_aks.json",
     "health_score_source": "health_scores1.json",
     "anomaly_source": "anomaly_events1.json",
 
