@@ -5,7 +5,7 @@
     "log_level": "INFO",
     "message": "sql-database connection pool initialized",
     "trace_id": "trace-sql-001",
-    "anomaly_id": "anom-sql-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:01:00Z",
@@ -13,7 +13,7 @@
     "log_level": "WARN",
     "message": "sql-database query latency increasing",
     "trace_id": "trace-sql-001",
-    "anomaly_id": "anom-sql-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:02:00Z",
@@ -21,7 +21,7 @@
     "log_level": "ERROR",
     "message": "sql-database deadlock detected during transaction",
     "trace_id": "trace-sql-001",
-    "anomaly_id": "anom-sql-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:03:00Z",
@@ -29,7 +29,7 @@
     "log_level": "INFO",
     "message": "sql-database replication sync started",
     "trace_id": "trace-sql-002",
-    "anomaly_id": "anom-sql-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:04:00Z",
@@ -37,7 +37,7 @@
     "log_level": "WARN",
     "message": "sql-database replication lag above threshold",
     "trace_id": "trace-sql-002",
-    "anomaly_id": "anom-sql-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:05:00Z",
@@ -45,7 +45,7 @@
     "log_level": "ERROR",
     "message": "sql-database primary node unreachable",
     "trace_id": "trace-sql-002",
-    "anomaly_id": "anom-sql-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:06:00Z",
@@ -53,7 +53,7 @@
     "log_level": "INFO",
     "message": "sql-database cache cleanup completed",
     "trace_id": "trace-sql-003",
-    "anomaly_id": "anom-sql-003"
+    "anomaly_id": "sql-database-anomaly-3"
   },
   {
     "@timestamp": "2026-05-04T10:07:00Z",
@@ -61,7 +61,7 @@
     "log_level": "WARN",
     "message": "sql-database cpu usage trending high",
     "trace_id": "trace-sql-003",
-    "anomaly_id": "anom-sql-003"
+    "anomaly_id": "sql-database-anomaly-3"
   },
   {
     "@timestamp": "2026-05-04T10:08:00Z",
@@ -69,7 +69,7 @@
     "log_level": "ERROR",
     "message": "sql-database query timeout exceeded",
     "trace_id": "trace-sql-003",
-    "anomaly_id": "anom-sql-003"
+    "anomaly_id": "sql-database-anomaly-3"
   },
   {
     "@timestamp": "2026-05-04T10:09:00Z",
@@ -77,7 +77,7 @@
     "log_level": "INFO",
     "message": "sql-database background vacuum running",
     "trace_id": "trace-sql-004",
-    "anomaly_id": "anom-sql-004"
+    "anomaly_id": "sql-database-anomaly-4"
   },
   {
     "@timestamp": "2026-05-04T10:10:00Z",
@@ -85,7 +85,7 @@
     "log_level": "WARN",
     "message": "sql-database memory utilization high",
     "trace_id": "trace-sql-004",
-    "anomaly_id": "anom-sql-004"
+    "anomaly_id": "sql-database-anomaly-4"
   },
   {
     "@timestamp": "2026-05-04T10:11:00Z",
@@ -93,7 +93,7 @@
     "log_level": "ERROR",
     "message": "sql-database storage nearing capacity",
     "trace_id": "trace-sql-004",
-    "anomaly_id": "anom-sql-004"
+    "anomaly_id": "sql-database-anomaly-4"
   },
 
   {
@@ -102,7 +102,7 @@
     "log_level": "INFO",
     "message": "worker-nodes kubelet service healthy",
     "trace_id": "trace-worker-001",
-    "anomaly_id": "anom-worker-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:01:00Z",
@@ -110,7 +110,7 @@
     "log_level": "WARN",
     "message": "worker-nodes pod scheduling delay observed",
     "trace_id": "trace-worker-001",
-    "anomaly_id": "anom-worker-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:02:00Z",
@@ -118,7 +118,7 @@
     "log_level": "ERROR",
     "message": "worker-nodes node memory pressure critical",
     "trace_id": "trace-worker-001",
-    "anomaly_id": "anom-worker-001"
+    "anomaly_id": "sql-database-anomaly-1"
   },
   {
     "@timestamp": "2026-05-04T10:03:00Z",
@@ -126,7 +126,7 @@
     "log_level": "INFO",
     "message": "worker-nodes container runtime restarted",
     "trace_id": "trace-worker-002",
-    "anomaly_id": "anom-worker-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:04:00Z",
@@ -134,7 +134,7 @@
     "log_level": "WARN",
     "message": "worker-nodes disk io latency increased",
     "trace_id": "trace-worker-002",
-    "anomaly_id": "anom-worker-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:05:00Z",
@@ -142,7 +142,7 @@
     "log_level": "ERROR",
     "message": "worker-nodes pod eviction threshold reached",
     "trace_id": "trace-worker-002",
-    "anomaly_id": "anom-worker-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
 
   {
@@ -151,7 +151,7 @@
     "log_level": "INFO",
     "message": "app-flask application boot completed",
     "trace_id": "trace-app-001",
-    "anomaly_id": "anom-app-001"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:01:00Z",
@@ -159,7 +159,7 @@
     "log_level": "WARN",
     "message": "app-flask response latency increased",
     "trace_id": "trace-app-001",
-    "anomaly_id": "anom-app-001"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:02:00Z",
@@ -167,7 +167,7 @@
     "log_level": "ERROR",
     "message": "app-flask upstream api request failed",
     "trace_id": "trace-app-001",
-    "anomaly_id": "anom-app-001"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:03:00Z",
@@ -175,7 +175,7 @@
     "log_level": "INFO",
     "message": "app-flask cache refresh completed",
     "trace_id": "trace-app-002",
-    "anomaly_id": "anom-app-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:04:00Z",
@@ -183,7 +183,7 @@
     "log_level": "WARN",
     "message": "app-flask session retries increasing",
     "trace_id": "trace-app-002",
-    "anomaly_id": "anom-app-002"
+    "anomaly_id": "sql-database-anomaly-2"
   },
   {
     "@timestamp": "2026-05-04T10:05:00Z",
@@ -191,6 +191,6 @@
     "log_level": "ERROR",
     "message": "app-flask database dependency unavailable",
     "trace_id": "trace-app-002",
-    "anomaly_id": "anom-app-002"
+    "anomaly_id": "sql-database-anomaly-2"
   }
 ]
